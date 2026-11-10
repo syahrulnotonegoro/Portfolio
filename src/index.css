@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background: #080808;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+button, a {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #e32636;
+  color: #ffffff;
+}

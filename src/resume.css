@@ -1,0 +1,591 @@
+
+/* ========================================
+   RESUME SECTION
+======================================== */
+
+.resume-section {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 80px 5%;
+
+  background: #10090c;
+  color: #fff;
+
+  box-sizing: border-box;
+
+  overflow: visible;
+}
+
+.resume-section *,
+.resume-section *::before,
+.resume-section *::after {
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.resume-heading {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.resume-subtitle {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #d85a78;
+
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.resume-heading h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.resume-heading h2 span {
+  color: #d85a78;
+}
+
+.resume-heading-line {
+  width: 60px;
+  height: 3px;
+
+  margin: 18px auto;
+
+  background: #8b2635;
+}
+
+.resume-heading p {
+  margin: 0;
+
+  color: #c8c1c4;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   TWO COLUMN LAYOUT
+======================================== */
+
+.resume-columns {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 48px;
+
+  align-items: start;
+}
+
+.resume-column {
+  width: 100%;
+  min-width: 0;
+
+  overflow: visible;
+}
+
+/* ========================================
+   RESUME GROUP
+======================================== */
+
+.resume-group {
+  width: 100%;
+  min-width: 0;
+
+  margin-bottom: 34px;
+}
+
+.resume-group-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 0 0 22px;
+
+  color: #fff;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.resume-group-title svg {
+  flex-shrink: 0;
+
+  color: #d85a78;
+}
+
+/* ========================================
+   TIMELINE
+======================================== */
+
+.timeline {
+  position: relative;
+
+  width: 100%;
+  min-width: 0;
+
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 4px;
+
+  width: 1px;
+
+  background: #8b2635;
+}
+
+.timeline-item {
+  position: relative;
+
+  width: 100%;
+  min-width: 0;
+
+  margin-bottom: 28px;
+
+  overflow: visible;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 3px;
+  left: -24px;
+
+  width: 12px;
+  height: 12px;
+
+  border: 1px solid #d85a78;
+  border-radius: 50%;
+
+  background: #10090c;
+
+  z-index: 1;
+}
+
+/* ========================================
+   TITLE AND DATE
+   FIX: DATE NOT CLIPPED
+======================================== */
+
+.resume-section .timeline-header {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+
+  /*
+    Area khusus tanggal.
+    Judul tidak boleh masuk
+    ke area tanggal.
+  */
+
+  padding: 0 140px 0 0;
+
+  margin: 0 0 10px;
+
+  overflow: visible;
+}
+
+/* TITLE */
+
+.resume-section .timeline-header .timeline-title {
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+
+  /*
+    Judul panjang boleh turun baris.
+  */
+
+  white-space: normal;
+
+  overflow: visible;
+
+  overflow-wrap: break-word;
+
+  word-break: normal;
+}
+
+/* DATE */
+
+.resume-section .timeline-header .timeline-date {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  display: inline-block;
+
+  /*
+    Lebar tanggal mengikuti isi.
+    Tidak menggunakan width 100%.
+  */
+
+  width: max-content;
+
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  color: #e8a0ad;
+
+  font-size: 11px;
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  text-align: right;
+
+  /*
+    Tanggal tidak boleh terpotong.
+  */
+
+  white-space: nowrap;
+
+  overflow: visible;
+
+  text-overflow: clip;
+
+  flex-shrink: 0;
+}
+
+/* ========================================
+   ROLE AND DESCRIPTION
+======================================== */
+
+.timeline-role {
+  margin: 0 0 10px;
+
+  color: #e8a0ad;
+
+  font-size: 12px;
+  line-height: 1.7;
+
+  overflow-wrap: break-word;
+}
+
+.timeline-description {
+  margin: 0;
+
+  color: #eee;
+
+  font-size: 12px;
+  line-height: 1.8;
+
+  overflow-wrap: break-word;
+}
+
+/* ========================================
+   BULLET POINTS
+======================================== */
+
+.timeline-item ul {
+  margin: 8px 0 0;
+
+  padding-left: 16px;
+
+  color: #eee;
+
+  font-size: 12px;
+  line-height: 1.8;
+
+  overflow-wrap: break-word;
+}
+
+.timeline-item li {
+  padding-left: 2px;
+
+  margin-bottom: 5px;
+}
+
+.timeline-item li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item li::marker {
+  color: #d85a78;
+}
+
+/* ========================================
+   SHOW MORE
+======================================== */
+
+.resume-more-content {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    grid-template-rows 0.45s ease,
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+}
+
+.resume-more-content-inner {
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+.resume-more-content.expanded {
+  grid-template-rows: 1fr;
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.resume-more-content.expanded
+.resume-more-content-inner {
+  overflow: visible;
+}
+
+/* ========================================
+   VIEW MORE BUTTON
+======================================== */
+
+.resume-footer {
+  display: flex;
+
+  justify-content: center;
+
+  margin: 35px auto 0;
+}
+
+.resume-more-button {
+  padding: 11px 24px;
+
+  border: 1px solid #8b2635;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.resume-more-button:hover {
+  background: #8b2635;
+
+  border-color: #8b2635;
+
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   ANIMATION
+======================================== */
+
+.timeline-item {
+  animation: resumeFadeIn 0.35s ease both;
+}
+
+@keyframes resumeFadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .resume-section {
+    padding: 60px 4%;
+  }
+
+  .resume-columns {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 30px;
+  }
+
+  .resume-heading {
+    margin-bottom: 45px;
+  }
+
+  .resume-column {
+    width: 100%;
+  }
+
+  /*
+    Pada tablet, tanggal tetap
+    berada di kanan.
+  */
+
+  .resume-section .timeline-header {
+    padding-right: 140px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+  .resume-section {
+    padding: 45px 20px;
+  }
+
+  .resume-heading h2 {
+    font-size: 30px;
+  }
+
+  .resume-heading p {
+    font-size: 13px;
+  }
+
+  .resume-columns {
+    gap: 20px;
+  }
+
+  .resume-group {
+    margin-bottom: 28px;
+  }
+
+  .resume-group-title {
+    font-size: 18px;
+
+    margin-bottom: 18px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline::before {
+    left: 3px;
+  }
+
+  .timeline-item::before {
+    left: -22px;
+
+    width: 11px;
+    height: 11px;
+  }
+
+  /*
+    Ruang judul dikurangi
+    tetapi tanggal tetap utuh.
+  */
+
+  .resume-section .timeline-header {
+    padding-right: 115px;
+  }
+
+  .resume-section .timeline-header .timeline-title {
+    font-size: 11px;
+
+    line-height: 1.6;
+  }
+
+  .resume-section .timeline-header .timeline-date {
+    font-size: 10px;
+
+    line-height: 1.6;
+  }
+
+  .timeline-role,
+  .timeline-description,
+  .timeline-item ul {
+    font-size: 12px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 380px) {
+  .resume-section {
+    padding: 40px 14px;
+  }
+
+  .timeline {
+    padding-left: 18px;
+  }
+
+  .timeline-item::before {
+    left: -20px;
+  }
+
+  .resume-section .timeline-header {
+    padding-right: 100px;
+  }
+
+  .resume-section .timeline-header .timeline-title {
+    font-size: 10px;
+  }
+
+  .resume-section .timeline-header .timeline-date {
+    font-size: 9px;
+  }
+}
